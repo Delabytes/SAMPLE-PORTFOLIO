@@ -1,0 +1,299 @@
+@import url(fonts.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppinsregular';
+    font-optical-sizing: auto;
+}
+#home_cont{
+    height: 90svh;
+}
+#cont_1{
+    background: transparent;
+}
+#role::before{
+    content:"";
+    background: #985EFF;
+    height: 20px;
+    width: 100px;
+
+}
+.gradient {
+    background-image: url(../img/black-smooth-textured-paper-background.jpg);
+    background-repeat: no-repeat;
+}
+.banner{
+    font-family: 'poppinssemibold';
+    color: whitesmoke;
+}
+body {
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
+    overflow-X: hidden;
+    font-size: 12pt;
+}
+
+header {    
+    width: 100vw;
+    height: 60px;
+    background-color: #373737;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    justify-content: center;
+}
+
+.navbar {
+    height: 60px;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.nav {
+    display: flex;
+    padding: 10px;
+}
+
+.nav li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.navlink {
+    text-decoration: none;
+    font-family: 'poppinssemibold';
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 500ms ease;
+    position: relative;
+}
+
+.navlink:hover {
+    background: #985EFF;
+}
+
+#navTitle {
+    padding: 5px;
+}
+
+section {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    padding: 60px;
+    color:#2D2D2D;;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.content-header {
+    font-family: 'poppinssemibold';
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    display: block;
+}
+.main {
+    display: flex;
+    margin: 0px auto;
+    width: 80%;
+}
+.main :nth-child(1)
+{
+    flex-direction: column;
+    gap: 5px;
+}
+
+#portrait {
+    width: 35vw;
+}
+
+
+#nav2{
+    list-style-type: none;
+    width: 50vw;
+    background: #2D2D2D;
+    position: fixed;   
+    top: 60px;
+    right: 0;
+    z-index: 2;
+}
+#nav2 li{
+    padding: 20px;
+}
+
+
+#port {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#abt_port {
+    width: 50vw;
+    padding-right: 50px;
+}
+
+.card-lg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'poppinsmedium';
+    font-size: 1.5rem;
+    width: 70vw;
+    margin: 0px  auto;
+}
+.card-text{
+    text-wrap:balance;
+    margin: 0px 10px;
+}
+
+#btn_download {
+    width: 200px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15pt;
+    font-weight: 700;
+    background: #985EFF;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 300ms ease;
+    
+}
+
+#btn_download:hover {
+    opacity: .7;
+}
+
+#menu_toggle {
+    display: none;
+    text-align: center;
+    border: none;
+    font-size: 20pt;
+    font-weight: 500;
+    color: white;
+    padding: auto;
+    border-radius: 10px;
+    background-color: #464646;
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+    transition: 300ms ease;
+}
+
+#menu_toggle:hover {
+    opacity: .7;
+}
+
+.content-margin {
+    margin-top: 70px;
+    text-align: center;
+}
+
+#nav_logo {
+    filter: brightness(0) saturate(100%) invert(89%) sepia(100%) saturate(0%) hue-rotate(311deg) brightness(102%) contrast(105%);
+}
+
+.card-group{
+    display: grid;
+    grid-template-columns: repeat(auto-fill ,300px);
+    gap: 10px;
+    width: 75vw;
+    justify-content: center;
+}
+.skill-card {
+    width: 300px;
+    height: 300px;
+    background: #b186fc;
+    color: whitesmoke;
+    text-align: center;
+    margin: 0px auto;
+    transition: 300ms ease;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    /* animation: slideUp ease;
+    animation-timeline: view(); */
+}
+
+.skill-card h1{
+    font-family:'poppinssemibold';
+}
+
+
+.view_project {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: inherit;
+    height: inherit;
+    opacity: 0;
+    color: white;
+    background: rgba(45, 45, 45, 90%);
+    border-radius: 10px;
+    transition: 300ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view_project:hover {
+    opacity: 1;
+}
+
+.view_project a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.year_select {
+    border: none;
+}
+
+.skilss {
+    display: flex;
+    margin: 0px auto;
+    width: 80vw;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+       transform: scale(.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+

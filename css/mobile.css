@@ -1,0 +1,50 @@
+@import url(stylesheet.css);
+/* MOBILE VIEW */
+@media  only screen and (max-width: 800px) {
+ 
+    body, html{
+        width: 100vw;
+        overflow-x: hidden;
+        padding: 0.8em 0;
+    }
+    .content{
+        width: 100vw;
+        padding: 60px 10px;
+    }
+    .nav {
+        display: none;
+    }
+    #menu_toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .card{
+        flex-direction: column;
+        width: 100svw;
+    }
+    .card p{
+        font-size: 12pt;
+    }
+    .card-group{
+        display: grid;
+        justify-content: flex-start;
+        grid-auto-flow: column;
+        margin: 0px auto;
+        overflow-x: scroll;
+        gap: 1rem;
+        scrollbar-width: none;
+        scroll-snap-type: x mandatory;
+        scroll-snap-align: start;
+        width: 80vw;
+    }
+    #portrait{
+        width: 80vw;
+        text-align: center;
+    }
+    .skilss{
+        width: 100vw;
+    }
+}
